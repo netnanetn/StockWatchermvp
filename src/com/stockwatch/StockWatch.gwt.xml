@@ -1,0 +1,18 @@
+<module>
+	<inherits name="com.google.gwt.user.User"/>
+	
+	
+	 <inherits name="com.google.gwt.user.theme.dark.Dark"/>
+	  <inherits name='com.google.gwt.user.theme.standard.StandardRTL'/>
+	
+	<inherits name="com.google.gwt.place.Place"/>
+	<inherits name="com.google.gwt.activity.Activity"/>
+	
+	<entry-point class="com.stockwatch.client.StockWatch"/>
+	
+	<replace-with class="com.stockwatch.client.ClientFactoryImpl">
+		<when-type-is class="com.stockwatch.client.ClientFactory"/>
+	</replace-with>
+	
+	<set-configuration-property name="UiBinder.useSafeHtmlTemplates" value="true" />
+</module>

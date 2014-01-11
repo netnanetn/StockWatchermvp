@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+	<ui:style>
+		.panel {
+			background-color: green;
+             margin: 10px 0px 15px 0px;
+             
+		}
+	</ui:style>
+
+	<g:FlowPanel styleName="{style.panel}">
+		<g:VerticalPanel>
+			<g:HorizontalPanel>
+				<g:TextBox ui:field="newSymbolTextBox"/>
+				<g:Button  ui:field="addButton">Add</g:Button>
+			</g:HorizontalPanel>
+			<g:Label text="" ui:field="lastUpdatedLabel"/>
+			<g:FlexTable ui:field="stocksFlexTable"/>
+		</g:VerticalPanel>
+	</g:FlowPanel>
+</ui:UiBinder>
